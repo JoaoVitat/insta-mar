@@ -1,26 +1,101 @@
-# Documento de Arquitetura e Design
+# Definição da Arquitetura do Sistema
 
-## 1. Arquitetura do Sistema
+## 1. Análise dos Requisitos
 
-Descrição geral da arquitetura da aplicação.
+### 1.1 Complexidade do Sistema
+A complexidade do aplicativo Unimar será de nível médio. Ele contará com um sistema de postagens, onde os usuários poderão curtir e comentar nas publicações. Além disso, o aplicativo incluirá um sistema de mensagens privadas para comunicação entre usuários e um sistema de suporte para atendimento e resolução de dúvidas ou problemas.
 
-### 1.1 Visão Geral da Arquitetura
+### 1.2 Padrões de Uso Esperados
+O aplicativo deverá ser acessado por vários usuários simultaneamente, em tempo real. Por isso, é essencial que ele seja capaz de suportar uma grande quantidade de alunos conectados ao mesmo tempo, garantindo um funcionamento rápido, estável e sem prejuízos ao desempenho da rede social.
 
-```mermaid
-graph TD
-  UI[Interface do Usuário]
-  API[Camada de API]
-  DB[(Banco de Dados)]
-  Auth[Autenticação]
-  RFID[Módulo RFID]
-  HW[Hardware (Ex: Arduino)]
+### 1.3 Requisitos Não-Funcionais
+- **Desempenho, Segurança, Escabilidade:**
+Desempenho, escalabilidade e segurança são essenciais. A criptografia no envio de mensagens particulares é um requisito importante. A arquitetura também deve ser capaz de lidar com a carga de usuários de forma eficiente.
 
-  UI --> API
-  API --> Auth
-  API --> DB
-  API --> RFID
-  RFID --> HW
-```
+
+### 1.4 Restrições Tecnológicas
+A plataforma será desenvolvida utilizando tecnologias modernas e amplamente utilizadas. Para a interface (front-end), serão adotadas ferramentas como React/Flutter, garantindo uma experiência de usuário fluida e compatível com diferentes dispositivos móveis. O back-end será implementado em Node.js, oferecendo desempenho e escalabilidade, enquanto o banco de dados utilizado será o PostgreSQL, reconhecido por sua robustez e confiabilidade.
+
+---
+
+## 2. Seleção do Estilo Arquitetural
+
+- **Estilo escolhido:**  
+Arquitetura Cliente-Servidor
+
+- **Justificativa da escolha:**  
+A arquitetura cliente-servidor foi escolhida por permitir uma comunicação clara entre o front-end e o back-end, além de oferecer boa escalabilidade, organização e segurança. O servidor centraliza funções como autenticação, gerenciamento de dados, postagens e mensagens privadas criptografadas, facilitando o controle e a manutenção do sistema.
+
+---
+
+## 3. Identificação dos Componentes
+
+- **Front-end:** React/Flutter serão utilizados para o desenvolvimento da interface visual do aplicativo, proporcionando uma experiência de usuário moderna, responsiva e compatível com diferentes dispositivos móveis.
+
+- **Back-end:** A parte lógica do aplicativo será responsável por funcionalidades como a criação de postagens, envio de mensagens entre usuários e autenticação de acesso. Essa camada será implementada no back-end e cuidará de todo o processamento das regras do sistema.
+
+- **Banco de Dados:** Será responsável por armazenar todas as informações do sistema, incluindo dados dos usuários, postagens, comentários, perfis e mensagens privadas. Essa camada garante a persistência e a integridade das informações utilizadas pelo aplicativo.
+
+- **Serviços externos:** Módulo dedicado ao gerenciamento de mensagens privadas entre usuários, com suporte a criptografia de ponta a ponta para garantir a segurança e a confidencialidade das conversas.
+
+---
+
+## 4. Definição de Interfaces
+
+- Frontend para Backend: O front-end se comunicará com o back-end por meio de **APIs RESTful**, usando **HTTP/HTTPS**.
+
+- Backend para Banco de Dados: O back-end se comunicará com o banco de dados **PostgreSQL** usando **SQL**.
+
+- Criptografia das Mensagens: O módulo de mensagens privadas usará uma implementação de criptografia ponta a ponta para garantir a privacidade.
+
+---
+
+## 5. Documento de Arquitetura
+
+### 5.1 Visão Geral da Arquitetura
+ 
+ A arquitetura do sistema será baseada no modelo **Cliente-Servidor**, com separação clara entre front-end, back-end e banco de dados. O sistema também contará com integração a serviços externos, como o módulo de mensagens criptografadas. Essa organização permite escalabilidade, facilidade de manutenção e maior segurança no gerenciamento das informações.
+
+---
+
+### 5.2 Diagrama Arquitetural
+
+[Usuário - App (React/Flutter)]
+⇅
+[Back-end - Node.js]
+⇅
+[Banco de Dados - PostgreSQL]
+⇅
+[Serviço de Mensagens Criptografadas]
+
+---
+
+### 5.3 Descrição dos Componentes
+
+- **Front-end:** Responsável pela interface com o usuário, desenvolvido com React/Flutter. Exibe postagens, comentários, mensagens e demais funcionalidades.
+  
+- **Back-end:** Gerencia a lógica da aplicação, incluindo autenticação, criação de postagens, envio de mensagens, suporte e controle de usuários. Desenvolvido com Node.js.
+
+- **Banco de Dados:** Armazena informações essenciais, como usuários, perfis, postagens, comentários e mensagens privadas, utilizando PostgreSQL.
+
+- **Serviço de Mensagens:** Módulo especializado para envio e recebimento de mensagens privadas com **criptografia ponta a ponta**, garantindo segurança nas comunicações entre usuários.
+
+---
+
+### 5.4 Relações entre os Componentes
+
+- O **front-end** se comunica com o **back-end** via APIs REST.
+
+- O **back-end** se conecta ao **banco de dados** para armazenamento e recuperação das informações.
+
+- O módulo de **mensagens privadas criptografadas** é acionado pelo back-end quando necessário para garantir a privacidade das conversas.
+
+---
+
+### 5.5 Justificativas das Escolhas
+
+As tecnologias e a arquitetura escolhidas garantem um sistema moderno, seguro e escalável. A separação em camadas facilita a manutenção, enquanto o uso de ferramentas populares como React/Flutter, Node.js e PostgreSQL assegura estabilidade, performance e ampla documentação. A criptografia de mensagens é essencial para proteger a privacidade dos usuários em comunicações sensíveis.
+
 
 ---
 
