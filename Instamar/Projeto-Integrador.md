@@ -100,33 +100,101 @@ As tecnologias e a arquitetura escolhidas garantem um sistema moderno, seguro e 
 ---
 
 ## 2. Diagrama de Classes UML
-
 ```mermaid
 classDiagram
-  class ClasseA {
-    +atributo1: Tipo
-    +metodo1(): Tipo
-  }
+    %% --- Mídias ---
+    class Midia {
+        +String id
+        +String titulo
+        +Date dataUpload
+        +Float pesoMB
+        +Float tamanhoMB
+    }
 
-  class ClasseB {
-    +atributo2: Tipo
-    +metodo2(): Tipo
-  }
+    class Foto {
+        +String resolucao
+        +String formato
+    }
 
-  ClasseA --> ClasseB : relação
-```
+    class Video {
+        +Float duracaoSegundos
+        +String codec
+    }
 
+    class TamanhoFoto {
+        +Float alturaPx
+        +Float larguraPx
+    }
+
+    class PesoFoto {
+        +Float pesoMB
+    }
+
+    class TamanhoVideo {
+        +Float largura
+        +Float altura
+        +String proporcao
+    }
+
+    class PesoVideo {
+        +Float pesoMB
+        +String qualidade
+    }
+
+    Midia <|-- Foto
+    Midia <|-- Video
+
+    Foto --> TamanhoFoto
+    Foto --> PesoFoto
+
+    Video --> TamanhoVideo
+    Video --> PesoVideo
+
+    %% --- Usuários e Interações ---
+    class Usuario {
+        +int id
+        +string nome
+        +string email
+        +criarPost()
+        +curtirPost()
+    }
+
+    class Post {
+        +int id
+        +string legenda
+        +string imagem
+        +string video
+        +adicionarComentario()
+        +adicionarCurtida()
+    }
+
+    class Comentario {
+        +int id
+        +string texto
+        +editar()
+    }
+
+    class Curtida {
+        +int id
+    }
+
+    Usuario "1" -- "0..*" Comentario : escreve
+    Usuario "1" -- "0..*" Curtida : curte
+    Post "1" -- "0..*" Curtida : recebe
+    Post "1" -- "0..*" Comentario : recebe
+    Usuario "1" -- "0..*" Post : cria
+```    
 ---
 
 ## 3. Aplicação dos Princípios SOLID
 
 | Princípio | Aplicação no Projeto |
 |----------|------------------------|
-| **S** - Responsabilidade Única | |
-| **O** - Aberto/Fechado | |
-| **L** - Substituição de Liskov | |
-| **I** - Segregação de Interfaces | |
-| **D** - Inversão de Dependência | |
+| **S** - Responsabilidade Única | uma classe para lidar com postagens e outra para login. |
+| **O** - Aberto/Fechado | adicionar novos tipos de reação sem alterar o código antigo |
+| **L** - Substituição de Liskov |Aluno e Professor devem se comportar como Usuário sem causar erros.|
+| **I** - Segregação de Interfaces |  quem só envia mensagens não precisa implementar funções de postagens.|
+| **D** - Inversão de Dependência |  usar INotificador para permitir trocar o envio de e-mails por push facilmente. |
 
 ---
 
@@ -233,15 +301,6 @@ graph LR
 | **Testes com Usuários** | Testes com alunos reais da faculdade (beta testers) para validar a experiência e recursos.       |
 | **Testes de Segurança** | Aplicação e validação das regras de segurança do Firebase (acesso aos dados, autenticação).     |
 
-
----
-
-## 7. Revisão Final
-
-- **Consistência**:  
-- **Clareza**:  
-- **Completude**:  
-- **Aderência aos Requisitos**:  
 
 ---
 
