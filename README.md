@@ -29,7 +29,7 @@ Essa plataforma permitirá que os estudantes se conectem de maneira prática e d
 - `/src`: Código-fonte da aplicação
 - `/diario`: Registros semanais do progresso
 - `/relatorios`: Relatórios de entrega parcial e final
-- `/reunioes`: Atas de reuniões e retrospectivas
+
 
 ## Como Executar o Projeto
 
