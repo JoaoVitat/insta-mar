@@ -20,8 +20,13 @@ Essa plataforma permitirá que os estudantes se conectem de maneira prática e d
 
 ## Tecnologias Utilizadas
 
-- Flutter
-- FireBase
+- React/Flutter
+- Node.js
+- PostgreSQL
+- API REST
+- Criptografia E2EE
+- FireBase (cogitado em usar após estudos)
+
 
 ## Estrutura do Repositório
 
