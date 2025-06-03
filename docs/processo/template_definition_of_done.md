@@ -1,3 +1,22 @@
+# Definição de Pronto (DoD)
+
+Esse documento define o que precisa ser feito para que uma tarefa ou história de usuário seja considerada "Pronta".
+
+## História de Usuário
+
+Uma história de usuário está "Pronta" quando:
+
+- ✅ **Atende aos requisitos da história:** A implementação está de acordo com o que foi descrito na história de usuário.
+- ✅ **Revisão de código feita:** Outro membro da equipe revisou o código e fez as correções necessárias.
+- ✅ **Testes criados e cobrindo o código:** Foram feitos testes para garantir que a maior parte do novo código está sendo testada (idealmente, 80% ou mais).
+- ✅ **Testes automatizados passaram:** Todos os testes automatizados rodaram sem falhas.
+- ✅ **Documentação ajustada:** A documentação foi atualizada para refletir as mudanças feitas no código.
+- ✅ **Aprovado pelo Product Owner:** A funcionalidade foi demonstrada e validada pelo PO.
+- ✅ **Código mesclado no branch principal:** O código foi integrado ao branch principal sem conflitos.
+- ✅ **Deploy no ambiente de homologação:** A funcionalidade foi publicada e está disponível no ambiente de homologação para teste.
+- ⬜ **Testes de regressão realizados:** Verificamos que a nova funcionalidade não quebrou nada que já estava funcionando.
+- ⬜ **Verificação de performance:** A funcionalidade foi testada para garantir que não haja problemas de desempenho.
+- ⬜ **Segurança validada:** A funcionalidade foi revisada quanto a possíveis falhas de segurança.
 # Definition of Done (DoD)
 
 Este documento define os critérios que devem ser atendidos para que uma história de usuário ou tarefa seja considerada "Pronta".
