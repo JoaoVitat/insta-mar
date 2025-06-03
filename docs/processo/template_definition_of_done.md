@@ -1,4 +1,4 @@
-# Definição de Pronto (DoD)
+# Definição de Pronto done (DoD)
 
 Este documento descreve o que precisa ser feito para que uma história de usuário ou tarefa seja considerada "Pronta". No momento, nada foi implementado, então tudo está pendente.
 
