@@ -1,64 +1,53 @@
 # Definição de Pronto (DoD)
 
-Esse documento define o que precisa ser feito para que uma tarefa ou história de usuário seja considerada "Pronta".
+Este documento descreve o que precisa ser feito para que uma história de usuário ou tarefa seja considerada "Pronta". No momento, nada foi implementado, então tudo está pendente.
 
 ## História de Usuário
 
-Uma história de usuário está "Pronta" quando:
+Uma história de usuário estará "Pronta" quando:
 
-- ✅ **Atende aos requisitos da história:** A implementação está de acordo com o que foi descrito na história de usuário.
-- ✅ **Revisão de código feita:** Outro membro da equipe revisou o código e fez as correções necessárias.
-- ✅ **Testes criados e cobrindo o código:** Foram feitos testes para garantir que a maior parte do novo código está sendo testada (idealmente, 80% ou mais).
-- ✅ **Testes automatizados passaram:** Todos os testes automatizados rodaram sem falhas.
-- ✅ **Documentação ajustada:** A documentação foi atualizada para refletir as mudanças feitas no código.
-- ✅ **Aprovado pelo Product Owner:** A funcionalidade foi demonstrada e validada pelo PO.
-- ✅ **Código mesclado no branch principal:** O código foi integrado ao branch principal sem conflitos.
-- ✅ **Deploy no ambiente de homologação:** A funcionalidade foi publicada e está disponível no ambiente de homologação para teste.
-- ⬜ **Testes de regressão realizados:** Verificamos que a nova funcionalidade não quebrou nada que já estava funcionando.
-- ⬜ **Verificação de performance:** A funcionalidade foi testada para garantir que não haja problemas de desempenho.
-- ⬜ **Segurança validada:** A funcionalidade foi revisada quanto a possíveis falhas de segurança.
-# Definition of Done (DoD)
-
-Este documento define os critérios que devem ser atendidos para que uma história de usuário ou tarefa seja considerada "Pronta".
-
-## História de Usuário
-
-Uma história de usuário é considerada "Pronta" quando:
-
-- [ ] Todos os critérios de aceitação foram atendidos
-- [ ] O código foi revisado por pelo menos um outro membro da equipe
-- [ ] Foram escritos testes unitários cobrindo pelo menos 80% do novo código
-- [ ] Todos os testes automatizados estão passando
-- [ ] A documentação técnica foi atualizada
-- [ ] A funcionalidade foi demonstrada e aprovada pelo Product Owner
-- [ ] O código foi mesclado ao branch principal
-- [ ] A funcionalidade está disponível no ambiente de homologação
+- ⬜ **Requisitos ainda precisam ser implementados:** A funcionalidade precisa ser desenvolvida para atender aos requisitos descritos na história.
+- ⬜ **Revisão de código ainda não foi feita:** O código precisa ser revisado por pelo menos um outro membro da equipe.
+- ⬜ **Testes ainda não foram criados:** Os testes unitários precisam ser escritos para garantir que o novo código esteja funcionando corretamente.
+- ⬜ **Testes automatizados ainda não rodaram:** Precisamos garantir que todos os testes automatizados passem corretamente, mas isso ainda não foi feito.
+- ⬜ **Documentação ainda não foi atualizada:** A documentação técnica precisa ser ajustada para refletir as mudanças que serão feitas no código.
+- ⬜ **Product Owner ainda não validou a funcionalidade:** A funcionalidade precisa ser apresentada ao PO para aprovação antes de avançarmos.
+- ⬜ **Código ainda não foi integrado ao branch principal:** O código precisa ser mesclado ao branch principal, mas isso não foi feito até agora.
+- ⬜ **Deploy no ambiente de homologação ainda não foi realizado:** Precisamos fazer o deploy da funcionalidade no ambiente de homologação para testes de aceitação.
+- ⬜ **Testes de regressão ainda precisam ser feitos:** Precisamos garantir que a nova funcionalidade não quebre as funcionalidades existentes.
+- ⬜ **Performance ainda não foi testada:** A funcionalidade precisa ser testada para garantir que não há problemas de desempenho.
+- ⬜ **Segurança ainda precisa ser verificada:** Precisamos revisar a funcionalidade para identificar possíveis falhas de segurança.
 
 ## Sprint
 
-Uma Sprint é considerada "Pronta" quando:
+# Sprint "Pronta" - Definição
 
-- [ ] Todas as histórias de usuário comprometidas para a Sprint estão "Prontas"
-- [ ] A documentação do usuário foi atualizada
-- [ ] Testes de integração foram realizados e estão passando
-- [ ] Testes de regressão foram executados e estão passando
-- [ ] O incremento foi apresentado na Sprint Review
-- [ ] Bugs críticos e de alta prioridade foram corrigidos
-- [ ] A Sprint Retrospective foi realizada
-- [ ] O Diário de Bordo foi atualizado
+Uma Sprint será considerada "Pronta" quando:
+
+- ⬜ **Todas as histórias de usuário planejadas estão prontas para serem implementadas:** As histórias de usuário que foram comprometidas para a Sprint estão totalmente detalhadas e bem definidas.
+- ⬜ **Documentação do usuário precisa ser preparada:** A documentação do usuário e os fluxos de interação precisam ser criados ou atualizados, mas isso ainda não foi feito.
+- ⬜ **Testes de integração ainda não foram realizados:** Testes de integração precisam ser definidos e planejados, mas ainda não foram executados.
+- ⬜ **Testes de regressão ainda não foram planejados:** Os testes de regressão ainda precisam ser planejados para garantir que nenhuma funcionalidade existente será quebrada.
+- ⬜ **Incremento ainda não foi demonstrado na Sprint Review:** Não temos nenhum incremento para apresentar na Sprint Review, pois ainda estamos na fase de planejamento.
+- ⬜ **Bugs críticos e de alta prioridade não foram identificados ou corrigidos:** Até o momento, não há código implementado para corrigir bugs, mas esses problemas precisam ser tratados assim que forem encontrados.
+- ⬜ **Sprint Retrospective ainda não foi realizada:** A Retrospectiva precisa ser agendada e realizada ao final da Sprint, mas ainda estamos nos primeiros passos da Sprint.
+- ⬜ **Diário de Bordo precisa ser atualizado:** O Diário de Bordo deve ser mantido atualizado com o andamento da Sprint, mas ainda não foi iniciado.
 
 ## Produto Final
 
-O produto final é considerado "Pronto" quando:
+# Produto "Pronto" - Definição
 
-- [ ] Todas as funcionalidades previstas no escopo foram entregues
-- [ ] A documentação completa está disponível (técnica e do usuário)
-- [ ] Todos os testes (unitários, integração, sistema e aceitação) estão passando
-- [ ] O produto foi homologado pelo Product Owner
-- [ ] O código está limpo e segue os padrões definidos
-- [ ] O Relatório Técnico Final foi concluído
-- [ ] A apresentação final foi preparada
-- [ ] O repositório está organizado e com a documentação atualizada
+O produto final será considerado "Pronto" quando:
+
+- ⬜ **Todas as funcionalidades planejadas ainda precisam ser desenvolvidas:** As funcionalidades previstas no escopo da aplicação (como feed de posts, stories, mensagens diretas, etc.) estão descritas e planejadas, mas ainda não foram implementadas.
+- ⬜ **Documentação técnica e do usuário ainda não foi criada:** A documentação técnica e a documentação do usuário precisam ser elaboradas para garantir que todos os aspectos do produto estejam bem descritos.
+- ⬜ **Testes (unitários, integração, sistema e aceitação) ainda precisam ser planejados:** Não realizamos testes ainda, mas é necessário planejar todos os tipos de testes, garantindo que a cobertura será completa quando o desenvolvimento começar.
+- ⬜ **Homologação pelo Product Owner ainda não aconteceu:** A funcionalidade precisa ser validada pelo Product Owner após o desenvolvimento, mas isso ainda está pendente.
+- ⬜ **Código limpo e padronizado ainda não foi produzido:** O código precisa seguir os padrões de qualidade e boas práticas, mas a codificação ainda não começou, então isso precisa ser feito ao longo do desenvolvimento.
+- ⬜ **Relatório Técnico Final ainda não foi criado:** O relatório técnico final será feito ao final da implementação, mas nesse momento ainda está em fase de planejamento.
+- ⬜ **Apresentação final ainda não foi preparada:** A apresentação final para stakeholders ou outras partes interessadas será feita quando o produto estiver pronto para ser apresentado.
+- ⬜ **Repositório precisa ser organizado e a documentação precisa ser atualizada:** O repositório de código ainda precisa ser estruturado corretamente e a documentação precisa ser mantida atualizada à medida que o desenvolvimento avança.
+
 
 >[!IMPORTANT]
 >Estes critérios devem ser revisados e atualizados pela equipe conforme necessário, mas sempre antes do início de uma nova Sprint.
