@@ -35,18 +35,14 @@ Uma Sprint será considerada "Pronta" quando:
 
 ## Produto Final
 
-# Produto "Pronto" - Definição
-
-O produto final será considerado "Pronto" quando:
-
-- ⬜ **Todas as funcionalidades planejadas ainda precisam ser desenvolvidas:** As funcionalidades previstas no escopo da aplicação (como feed de posts, stories, mensagens diretas, etc.) estão descritas e planejadas, mas ainda não foram implementadas.
-- ⬜ **Documentação técnica e do usuário ainda não foi criada:** A documentação técnica e a documentação do usuário precisam ser elaboradas para garantir que todos os aspectos do produto estejam bem descritos.
-- ⬜ **Testes (unitários, integração, sistema e aceitação) ainda precisam ser planejados:** Não realizamos testes ainda, mas é necessário planejar todos os tipos de testes, garantindo que a cobertura será completa quando o desenvolvimento começar.
-- ⬜ **Homologação pelo Product Owner ainda não aconteceu:** A funcionalidade precisa ser validada pelo Product Owner após o desenvolvimento, mas isso ainda está pendente.
-- ⬜ **Código limpo e padronizado ainda não foi produzido:** O código precisa seguir os padrões de qualidade e boas práticas, mas a codificação ainda não começou, então isso precisa ser feito ao longo do desenvolvimento.
-- ⬜ **Relatório Técnico Final ainda não foi criado:** O relatório técnico final será feito ao final da implementação, mas nesse momento ainda está em fase de planejamento.
-- ⬜ **Apresentação final ainda não foi preparada:** A apresentação final para stakeholders ou outras partes interessadas será feita quando o produto estiver pronto para ser apresentado.
-- ⬜ **Repositório precisa ser organizado e a documentação precisa ser atualizada:** O repositório de código ainda precisa ser estruturado corretamente e a documentação precisa ser mantida atualizada à medida que o desenvolvimento avança.
+- [x] Todas as funcionalidades previstas no escopo foram entregues  
+- [x] A documentação completa está disponível (técnica e do usuário)  
+- [ ] Todos os testes (unitários, integração, sistema e aceitação) estão passando  
+- [x] O produto foi homologado pelo Product Owner  
+- [ ] O código está limpo e segue os padrões definidos  
+- [x] O Relatório Técnico Final foi concluído  
+- [x] A apresentação final foi preparada  
+- [ ] O repositório está organizado e com a documentação atualizada
 
 
 >[!IMPORTANT]
