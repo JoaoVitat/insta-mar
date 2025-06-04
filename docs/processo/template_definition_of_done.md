@@ -6,17 +6,18 @@ Este documento descreve o que precisa ser feito para que uma história de usuár
 
 Uma história de usuário estará "Pronta" quando:
 
-- ⬜ **Requisitos ainda precisam ser implementados:** A funcionalidade precisa ser desenvolvida para atender aos requisitos descritos na história.
-- ⬜ **Revisão de código ainda não foi feita:** O código precisa ser revisado por pelo menos um outro membro da equipe.
-- ⬜ **Testes ainda não foram criados:** Os testes unitários precisam ser escritos para garantir que o novo código esteja funcionando corretamente.
-- ⬜ **Testes automatizados ainda não rodaram:** Precisamos garantir que todos os testes automatizados passem corretamente, mas isso ainda não foi feito.
-- ⬜ **Documentação ainda não foi atualizada:** A documentação técnica precisa ser ajustada para refletir as mudanças que serão feitas no código.
-- ⬜ **Product Owner ainda não validou a funcionalidade:** A funcionalidade precisa ser apresentada ao PO para aprovação antes de avançarmos.
-- ⬜ **Código ainda não foi integrado ao branch principal:** O código precisa ser mesclado ao branch principal, mas isso não foi feito até agora.
-- ⬜ **Deploy no ambiente de homologação ainda não foi realizado:** Precisamos fazer o deploy da funcionalidade no ambiente de homologação para testes de aceitação.
-- ⬜ **Testes de regressão ainda precisam ser feitos:** Precisamos garantir que a nova funcionalidade não quebre as funcionalidades existentes.
-- ⬜ **Performance ainda não foi testada:** A funcionalidade precisa ser testada para garantir que não há problemas de desempenho.
-- ⬜ **Segurança ainda precisa ser verificada:** Precisamos revisar a funcionalidade para identificar possíveis falhas de segurança.
+- [x] **Requisitos ainda precisam ser implementados:** A funcionalidade precisa ser desenvolvida para atender aos requisitos descritos na história.
+- [ ] **Revisão de código ainda não foi feita:** O código precisa ser revisado por pelo menos um outro membro da equipe.
+- [ ] **Testes ainda não foram criados:** Os testes unitários precisam ser escritos para garantir que o novo código esteja funcionando corretamente.
+- [ ] **Testes automatizados ainda não rodaram:** Precisamos garantir que todos os testes automatizados passem corretamente, mas isso ainda não foi feito.
+- [x] **Documentação ainda não foi atualizada:** A documentação técnica precisa ser ajustada para refletir as mudanças que serão feitas no código.
+- [ ] **Product Owner ainda não validou a funcionalidade:** A funcionalidade precisa ser apresentada ao PO para aprovação antes de avançarmos.
+- [ ] **Código ainda não foi integrado ao branch principal:** O código precisa ser mesclado ao branch principal, mas isso não foi feito até agora.
+- [ ] **Deploy no ambiente de homologação ainda não foi realizado:** Precisamos fazer o deploy da funcionalidade no ambiente de homologação para testes de aceitação.
+- [ ] **Testes de regressão ainda precisam ser feitos:** Precisamos garantir que a nova funcionalidade não quebre as funcionalidades existentes.
+- [ ] **Performance ainda não foi testada:** A funcionalidade precisa ser testada para garantir que não há problemas de desempenho.
+- [ ] **Segurança ainda precisa ser verificada:** Precisamos revisar a funcionalidade para identificar possíveis falhas de segurança.
+
 
 ## Sprint
 
