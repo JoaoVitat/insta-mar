@@ -22,16 +22,14 @@ Uma história de usuário estará "Pronta" quando:
 
 # Sprint "Pronta" - Definição
 
-Uma Sprint será considerada "Pronta" quando:
-
-- ⬜ **Todas as histórias de usuário planejadas estão prontas para serem implementadas:** As histórias de usuário que foram comprometidas para a Sprint estão totalmente detalhadas e bem definidas.
-- ⬜ **Documentação do usuário precisa ser preparada:** A documentação do usuário e os fluxos de interação precisam ser criados ou atualizados, mas isso ainda não foi feito.
-- ⬜ **Testes de integração ainda não foram realizados:** Testes de integração precisam ser definidos e planejados, mas ainda não foram executados.
-- ⬜ **Testes de regressão ainda não foram planejados:** Os testes de regressão ainda precisam ser planejados para garantir que nenhuma funcionalidade existente será quebrada.
-- ⬜ **Incremento ainda não foi demonstrado na Sprint Review:** Não temos nenhum incremento para apresentar na Sprint Review, pois ainda estamos na fase de planejamento.
-- ⬜ **Bugs críticos e de alta prioridade não foram identificados ou corrigidos:** Até o momento, não há código implementado para corrigir bugs, mas esses problemas precisam ser tratados assim que forem encontrados.
-- ⬜ **Sprint Retrospective ainda não foi realizada:** A Retrospectiva precisa ser agendada e realizada ao final da Sprint, mas ainda estamos nos primeiros passos da Sprint.
-- ⬜ **Diário de Bordo precisa ser atualizado:** O Diário de Bordo deve ser mantido atualizado com o andamento da Sprint, mas ainda não foi iniciado.
+- [x] **Todas as histórias de usuário planejadas estão prontas para serem implementadas:** As histórias de usuário que foram comprometidas para a Sprint estão totalmente detalhadas e bem definidas.
+- [x] **Documentação do usuário precisa ser preparada:** A documentação do usuário e os fluxos de interação precisam ser criados ou atualizados, mas isso ainda não foi feito.
+- [ ] **Testes de integração ainda não foram realizados:** Testes de integração precisam ser definidos e planejados, mas ainda não foram executados.
+- [ ] **Testes de regressão ainda não foram planejados:** Os testes de regressão ainda precisam ser planejados para garantir que nenhuma funcionalidade existente será quebrada.
+- [ ] **Incremento ainda não foi demonstrado na Sprint Review:** Não temos nenhum incremento para apresentar na Sprint Review, pois ainda estamos na fase de planejamento.
+- [ ] **Bugs críticos e de alta prioridade não foram identificados ou corrigidos:** Até o momento, não há código implementado para corrigir bugs, mas esses problemas precisam ser tratados assim que forem encontrados.
+- [ ] **Sprint Retrospective ainda não foi realizada:** A Retrospectiva precisa ser agendada e realizada ao final da Sprint, mas ainda estamos nos primeiros passos da Sprint.
+- [ ] **Diário de Bordo precisa ser atualizado:** O Diário de Bordo deve ser mantido atualizado com o andamento da Sprint, mas ainda não foi iniciado.
 
 ## Produto Final
 
